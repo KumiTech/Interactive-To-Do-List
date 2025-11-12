@@ -1,0 +1,56 @@
+h1{
+text-align: center;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#back-card{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto;
+    border: 2px solid whitesmoke;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;   
+}
+
+
+#task-input{
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 5px;
+    border-radius: 5px;
+    
+}
+
+.input-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#add-task-btn{
+padding: 10px;
+font-size: 20px;
+margin-right: 5px;   
+border-radius: 5px;
+}
+
+#task-list{
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+}
