@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 h1{
 text-align: center;
 }
@@ -45,12 +48,34 @@ body{
 #add-task-btn{
 padding: 10px;
 font-size: 20px;
-margin-right: 5px;   
+margin-left: 5px;   
 border-radius: 5px;
 }
 
 #task-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     list-style-type: none;
     padding: 0;
-    width: 50%;
+    width: 100%;
+    margin-left: 50px;
+}
+
+ul li {
+}
+.list-item{
+    max-width: 100%;
+    line-height:1.5;
+    margin:0;
+    font-size: 20px;
+    border-bottom: 2px solid whitesmoke;
+    text-align: left
+}
+
+.delbtn{
+    position: absolute;
+    margin-left: 25px;
+    font-size: 17px ;
+
 }

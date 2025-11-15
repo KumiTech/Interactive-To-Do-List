@@ -13,11 +13,20 @@ function handleAddTask(e) {
     }
     else{
         const listElement = document.createElement("li");
-        listElement.classList.add = "list-item";
+        const delbtn = document.createElement("button")
+        delbtn.classList.add("delbtn")
+        listElement.classList.add("list-item");
+        delbtn.textContent = "Delete"
         listElement.textContent = taskText;
+        listElement.appendChild(delbtn)
         taskList.appendChild(listElement);
+        delbtn.addEventListener("click", () => {
+            taskList.removeChild(listElement)
+            taskInput.focus();
+        })
     }
     // container.appendChild(taskList)
+    
     taskInput.value = "";
 }
 
