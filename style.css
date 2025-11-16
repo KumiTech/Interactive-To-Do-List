@@ -74,7 +74,8 @@ ul li {
 }
 
 .delbtn{
-    position: absolute;
+    position: fixed;
+    left: 55%;
     margin-left: 25px;
     font-size: 17px ;
 
