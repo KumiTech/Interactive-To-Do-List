@@ -14,12 +14,19 @@ function handleAddTask(e) {
     else{
         const listElement = document.createElement("li");
         const delbtn = document.createElement("button")
+        const checkbox = document.createElement("input")
+
+
+        checkbox.type = 'checkbox'
+        checkbox.classList.add("checkbox")
         delbtn.classList.add("delbtn")
         listElement.classList.add("list-item");
         delbtn.textContent = "Delete"
         listElement.textContent = taskText;
+        
         listElement.appendChild(delbtn)
         taskList.appendChild(listElement);
+
         delbtn.addEventListener("click", () => {
             taskList.removeChild(listElement)
             taskInput.focus();

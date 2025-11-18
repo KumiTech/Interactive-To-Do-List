@@ -16,7 +16,7 @@ body{
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    max-width: 400px;
+    max-width: 550px;
     margin: 50px auto;
     border: 2px solid whitesmoke;
 }
@@ -42,7 +42,7 @@ body{
 .input-group{
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #add-task-btn{
@@ -53,30 +53,38 @@ border-radius: 5px;
 }
 
 #task-list{
-    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     list-style-type: none;
     padding: 0;
-    width: 100%;
-    margin-left: 50px;
+    width: 80%;
+    margin-left: 20px;
+    
 }
 
 ul li {
 }
+
 .list-item{
-    max-width: 100%;
     line-height:1.5;
-    margin:0;
-    font-size: 20px;
+    padding: 10px;
     border-bottom: 2px solid whitesmoke;
-    text-align: left
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 20px ;
+    
 }
 
 .delbtn{
-    position: fixed;
-    left: 55%;
-    margin-left: 25px;
-    font-size: 17px ;
-
+    position: relative;
+    right: 40px;
 }
+
+
+.delbtn:active{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    
+}
+    
